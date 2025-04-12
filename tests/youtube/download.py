@@ -3,7 +3,6 @@ import sys
 from urllib.parse import parse_qs, urlparse
 
 def get_video_id(url):
-    """YouTube URL에서 비디오 ID를 추출합니다."""
     parsed_url = urlparse(url)
     if parsed_url.hostname == 'youtu.be':
         return parsed_url.path[1:]
@@ -53,6 +52,6 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         video_url = sys.argv[1]
     else:
-        video_url = "https://www.youtube.com/watch?v=9bZkp7q19f0"
+        video_url = "https://www.youtube.com/watch?v=Cetg4gu0oQQ"
     
     download_video(video_url)
